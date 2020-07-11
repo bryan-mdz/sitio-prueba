@@ -1,0 +1,349 @@
+
+
+*{
+    margin: 0rem;
+    padding: 0rem;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   
+}
+.main-header{
+    background-color: rgb(100, 13, 13);
+    color: lightcoral;
+    line-height: 5;
+    text-align: center;
+    background-image: url(./IMG/poster7_3_8619.png);
+    background-size: 109px 109px;
+    background-repeat: no-repeat;
+    min-height: 100px;
+
+}
+
+
+.main-nav{ /* contenedor del menu*/
+    background-color: rgb(213, 229, 155);
+
+}
+
+img{
+   max-width: 100%;
+    
+}
+
+@media screen and (min-width: 768px) 
+{
+    .nav-container{
+        display: flex;
+        flex-direction: row;
+       
+    }
+    .nav-container_item{
+        flex-grow: 1; 
+    }
+    .nav-container_link{
+        display: block;
+    }
+
+    .main-container{
+        display: flex;
+        flex-direction: row;
+    }
+   
+
+    
+}
+
+
+
+.nav-container_item{ /* listas li*/
+    text-align: center;
+    line-height: 2.5;
+    border-bottom: 1px solid white;
+
+}
+.nav-container_item:hover{ /* Listas li hover*/
+    background-color: rgb(238, 194, 144);
+}
+
+.nav-container_link{ /*enlaces*/
+    color: rgb(0, 0, 0);
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    
+}
+
+@media screen and (min-width: 768px) 
+{
+      .main-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (min-width: 1024px) 
+{
+      .main-container{
+        background-color:white ;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;  
+        margin: 1px;
+       
+       
+    }
+}
+ /*<img src="./CSS/IMG/macarrones.jpg" alt="Imagen 1.1">*/
+        
+
+.main-container_section{
+    background-color:white;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    
+    color: white;
+    height: 300px;
+    background-image: url(./IMG/macarrones.jpg );
+    background-size: 100% 300px;
+    background-repeat: no-repeat;
+   
+    
+  
+    
+}
+
+
+@media screen and (min-width: 768px) 
+{
+    .main-container_section:nth-child(1){
+        display: flex;
+        font-size: 25pt;
+        background-color:white;
+        height: 600px;
+        flex-basis: 100%;
+        flex-grow: 4;
+        background-image: url(./IMG/macarrones.jpg );
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        margin: 1px;
+        
+    }
+    
+    }
+
+    @media screen and (min-width: 1024px) 
+{
+    .main-container_section:nth-child(1){
+        font-size: 25pt;
+        background-color: white;
+        
+        flex-basis: 40%;
+        height: 700px;
+        margin: 5px;
+        margin-top: 6px;
+        margin-bottom: 0;
+        
+    }
+    
+    }
+
+
+    .container-sections{
+        
+            background-color: white;
+            
+            display: flex;
+            flex-direction: row;           
+            color: white;
+            
+            flex-wrap: wrap; 
+            
+            
+            
+            
+                     
+        
+    }
+
+ 
+    .sections:nth-child(1){
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        flex-basis: 100%;
+        background: white;
+        
+        height: 349px;
+        background-image: url(./IMG/pescado.jpg );
+        background-size: 100% 348.55px;
+        background-repeat: no-repeat;
+        color: white;
+        
+        
+        
+    }
+    .sections:nth-child(2)
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        flex-basis: 100%;
+        background: white;
+        text-align: center;
+        height: 349px;
+        background-image: url(./IMG/tacos.jpg );
+        background-size: 100% 348.55px;
+        background-repeat: no-repeat;
+        color: white;
+        
+        
+        
+        
+    }
+
+
+
+    @media screen and (min-width: 768px) {
+        .container-sections{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            flex-basis: 100%;
+            background: white;
+            
+            
+        }
+        
+        
+
+        .sections:nth-child(1){
+            font-size: 25pt;
+            background-color:white;
+            
+           
+           margin: 1px;
+            
+            
+        }
+        .sections:nth-child(2){
+          font-size: 25pt;
+        margin: 1px;
+        
+         
+      }
+    }
+
+    @media screen and (min-width: 1024px) 
+    {
+    
+        .container-sections{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            flex-basis: 35%;
+            height: 700px; /**/
+            margin: 5px;
+            
+        }
+        .sections:nth-child(1){
+        flex-basis: 100%;
+        
+       /*background-image: url(./IMG/macarrones.jpg);*/
+        }
+        .sections:nth-child(2){
+            flex-basis: 100%;
+            
+            }
+        }
+
+        .descripcion{
+            display: flex;
+            flex-direction: row;
+            background-color: black;
+            opacity: .5;
+            height: 20%;
+           align-items: center;
+           justify-content: center;
+        
+        }
+
+.main-container_aside{
+    background-color: black;
+    flex-grow: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    color: white;
+    padding: 10px;
+    margin: 5px;
+}
+
+.Formulario
+{
+    width: 85%;
+    padding: 7px;
+    text-align: center;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    background: black;
+   
+    color: blanchedalmond;
+}
+.boton{
+    background: rgb(167, 14, 14);
+    padding: 5px;
+    width: 200px;
+}
+
+@media screen and (min-width: 768px) {
+    .main-container_aside{
+        display: flex;
+        flex-basis: 100%;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .main-container_aside{
+        display: flex;
+        flex-basis: 25%;
+        height: 300px;
+    }
+}
+
+
+.main-footer{
+    background-color: teal;
+    color: thistle;
+    line-height: 5;
+    text-align: center;
+    margin-top: auto;
+
+}
+@media screen and (min-width: 768px) {
+    .main-footer{
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis: 100%;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .main-footer{
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis: 100%;
+    }
+}
